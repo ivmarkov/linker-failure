@@ -1,0 +1,9 @@
+[package]
+name = "mybinary"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+mylib = { path = "../mylib" }
+mycriticalimpl = { path = "../mycriticalimpl", features = ["critical-section-my"] }
+critical-section = "1.1"
